@@ -1,0 +1,144 @@
+body{
+	font-family: 'Tangerine', serif;
+	background-color: yellowgreen;
+
+}
+.navbar-brand h1{
+	margin-top: 15px;
+	margin-bottom: 0;
+	margin-right: 10px;
+	font-weight: bolder;
+	text-transform: capitalize;
+	text-align: center;
+	color: black;
+	text-shadow: 4px 4px 4px #aaa;
+}
+#quote{
+	color: black;
+	font-size: 100%;
+	font-weight: bolder;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+#header-navbar{
+	background-color: yellow;
+}
+
+#logo-image{
+	width: 100px;
+	height: 100px;
+	background: url('../img/new logolg.png') no-repeat;
+	margin: 10px 10px 10px 0px;
+}
+#nav-list a:hover{
+	background: peru;
+}
+#phone-no a:hover, a:focus{
+	text-decoration: none;
+}
+#phone-no{
+	color: black;
+}
+#about-tile, #uses-tile, #map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid forestgreen;
+	overflow: hidden;
+}
+#about-tile:hover, #uses-tile:hover, #map-tile:hover{
+	box-shadow: 5px 5px 5px 5px yellow;
+}
+#about-tile{
+	background: url("../img/about-tile.png") no-repeat center;
+}
+#uses-tile{
+	background: url("../img/uses-tile.png") no-repeat center;
+}
+#about-tile span, #uses-tile span, #map-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	font-size: 25px;
+	text-transform: capitalize;
+	font-weight: bold;
+	text-align: center;
+	background-color: forestgreen;
+	color: yellow;
+	opacity: .8;
+}
+.card-footer{
+	margin-top: 10px;
+	background-color: forestgreen;
+
+}
+#hours, #address, #testimonials{
+	color: gold;
+}
+#hours>span, #address>span{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#testimonials{
+	font-style: italic;
+	font-size: 1.2em;
+}
+@media(min-width: 1200px){
+	.jumbotron{
+		background: url("../img/lgimg1.jpg") no-repeat;
+		height: 675px;
+		box-shadow: 0 0 50px black;
+		border: 2px solid forestgreen;
+	}
+}
+@media(min-width: 992px) and (max-width: 1199px){
+	#logo-image{
+	width: 80px;
+	height: 80px;
+	background: url('../img/new logo1.png') no-repeat;
+	margin: 10px 10px 10px 0px;}
+
+	.jumbotron{
+		background: url("../img/mdimg.jpg") no-repeat;
+		height: 557px;
+		box-shadow: 0 0 50px black;
+		border: 2px solid forestgreen;
+	}
+
+}
+@media(min-width: 763px) and (max-width: 991px){
+	.jumbotron{
+		background: url("../img/simg.jpg") no-repeat;
+		height: 457px;
+		box-shadow: 0 0 50px black;
+		border: 2px solid forestgreen;
+	}
+
+}
+@media(max-width: 762px){
+	#quote{
+	color: black;
+	font-size: 95%;
+	font-weight: bolder;}
+	.container .jumbotron{
+		padding: 0;
+		box-shadow: 0 0 50px black;
+		border: 2px solid forestgreen;
+	}
+	#about-tile, #uses-tile, #map-tile{
+		width: 250px;
+	}
+	.card-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.card-footer section hr{
+		width: 50%;
+		background-color: yellow;
+	}
+	
+}
+
