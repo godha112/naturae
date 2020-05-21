@@ -1,3 +1,4 @@
+/*style of front page start*/
 body{
 	font-family: 'Tangerine', serif;
 	background-color: yellowgreen;
@@ -86,6 +87,118 @@ body{
 	font-style: italic;
 	font-size: 1.2em;
 }
+/*style front page end*/
+
+/*style fruit page*/
+h1{
+	margin-top: 10px;
+	font-weight: bolder;
+	text-transform: capitalize;
+	color: black;
+}
+.category-tile{
+		position: relative;
+		width: 200px;
+		height: 200px;
+		margin:10px auto 15px;
+		border: 2px solid forestgreen;
+		overflow: hidden;
+
+}
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	font-size: 25px;
+	text-transform: capitalize;
+	font-weight: bold;
+	text-align: center;
+	background-color: forestgreen;
+	color: yellow;
+	opacity: .8;
+}
+.category-tile:hover{
+	box-shadow: 5px 5px 5px 5px yellow;
+}
+/*style fruit page end*/
+/*flower page style*/
+.flower{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	overflow: hidden;
+	margin: 20px;
+}
+.flower div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: forestgreen;
+	text-align: center;
+	opacity: 0.8;
+	color: yellow;
+	font-weight: bold;
+}
+.flower img{
+	border: 3px solid black;
+}
+.flower-details{
+	margin-top:80px;
+	padding-left: 100px;
+	color: black;
+	font-size: 1.3em;
+	font-weight: bold;
+
+}
+.flower-tile .names{
+	text-align: center;
+	margin-left: 100px;
+	margin-top: -15px;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+/*flower page style end*/
+/*herbs page style*/
+.herb{
+	margin-top: 15px;
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+.herb img{
+	border: 3px solid black;
+}
+.herb div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	background-color: black;
+	color: orange;
+	opacity: 0.8;
+
+}
+.herb-details{
+	margin-top: 0px;
+	margin-left: 90px;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.herb-names{
+	text-align: center;
+	margin-left: 80px;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-transform: capitalize;
+}
+/*herbs page style end*/
 @media(min-width: 1200px){
 	.jumbotron{
 		background: url("../img/lgimg1.jpg") no-repeat;
@@ -107,6 +220,29 @@ body{
 		box-shadow: 0 0 50px black;
 		border: 2px solid forestgreen;
 	}
+	.flower{
+		width: 250px;
+		height: 250px;
+	}
+	.flower-details{
+		text-align: center;
+		margin-top: 15px;
+		padding-left: 80px;
+	}
+	.herb{
+		width: 250px;
+		height: 250px;
+	}
+	.herb img{
+		width: 250px;
+		height: 250px;
+	}
+	.herb-details{
+		margin-bottom: 10px;
+		font-size: 1.2em;
+
+	}
+
 
 }
 @media(min-width: 763px) and (max-width: 991px){
@@ -116,6 +252,8 @@ body{
 		box-shadow: 0 0 50px black;
 		border: 2px solid forestgreen;
 	}
+
+	
 
 }
 @media(max-width: 762px){
@@ -130,6 +268,7 @@ body{
 	}
 	#about-tile, #uses-tile, #map-tile{
 		width: 250px;
+		margin-left: 70px;
 	}
 	.card-footer section{
 		margin-bottom: 30px;
@@ -138,6 +277,24 @@ body{
 	.card-footer section hr{
 		width: 50%;
 		background-color: yellow;
+	}
+	.flower-details{
+		margin-top: -10px;
+		margin-left: -90px;
+		padding-top: 10px;
+	}
+	.flower-tile .names{
+		margin-left: -20px;
+	}
+	.flower{
+		margin-left: 15px;
+	}
+
+	.herb-details{
+		margin-left: -10px;
+	}
+	.herb-names{
+		margin-left: -80px;
 	}
 	
 }
